@@ -1,12 +1,15 @@
 <script setup>
-import Phone from './components/Phone.vue'
+import Phone from './components/Phone.vue';
 </script>
 
 <template>
     <div class="home">
       <Phone class="phone" />
       <div class="description">
-        <h1>iMate</h1>
+        <div class="title">
+          <h1>iMate</h1>
+          <img src="./assets/andriod.svg" alt="Andriod Icon" />
+        </div>
         <p class="desc">Not just any mood tracker, but one which aids you towards understanding and bettering your emotional well-being.</p>
         <a class="button" href="/imate.apk">Download the APK now</a>
       </div>
@@ -21,6 +24,17 @@ import Phone from './components/Phone.vue'
   place-items: center;
   align-items: center;
   height: 96vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
 }
 
 .description {

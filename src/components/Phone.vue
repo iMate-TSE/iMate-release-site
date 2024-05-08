@@ -53,6 +53,17 @@ export default {
         animation: hover 4s infinite ease-in-out;
     }
 
+    .phone::before {
+        content: url(/text-arrow.svg);
+        position: absolute;
+        height: 100%;
+        /* top: 30px; */
+        top: -5px;
+        left: -20%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
     .power-button {
         width: var(--button-width);
         height: var(--power-button-height);
